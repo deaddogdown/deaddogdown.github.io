@@ -58,6 +58,17 @@
       border-bottom: 1px solid #444;
       padding-bottom: 1em;
     }
+
+   /* Centered Image */
+    .center-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 128px; /* adjust based on your image size */
+      height: auto;
+      z-index: 1;
+    }
   </style>
 </head>
 <body>
@@ -75,6 +86,8 @@
     <h2>Contact</h2>
     <p>Email us at: <a href="mailto:deaddogdown.gamestudio@gmail.com">deaddogdown.gamestudio@gmail.com</a></p>
   </div>
+
+<img src="images/logo.png" alt="Logo" class="center-image">
 
   <!-- Bottom Bar -->
   <div class="bottom-bar">

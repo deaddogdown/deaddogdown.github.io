@@ -4,20 +4,55 @@
   <meta charset="UTF-8">
   <title>Dead Dog Down – Game Studio</title>
   <style>
-    body {
-      font-family: sans-serif;
-      background: #111;
-      background-image: url("screenshots/DDD-GameStudio.png");
-      color: #eee;
-      padding: 2em;
+    /* Reset some defaults */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
+
+    html, body {
+      height: 100%;
+      font-family: sans-serif;
+      color: #eee;
+      background-color: #333;
+    }
+
+    .top-bar, .bottom-bar {
+      height: 100px;
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      left: 0;
+      right: 0;
+      z-index: 10;
+    }
+
+    .top-bar {
+      top: 0;
+    }
+
+    .bottom-bar {
+      bottom: 0;
+    }
+
+    .content {
+      padding: 120px 2em; /* 100px for top bar + some spacing */
+      min-height: 100vh;
+      background-color: #111;
+    }
+
     h1, h2 {
       color: #88ccff;
     }
+
     a {
       color: #aaffaa;
       text-decoration: none;
     }
+
     .addon {
       margin-bottom: 2em;
       border-bottom: 1px solid #444;
@@ -26,10 +61,25 @@
   </style>
 </head>
 <body>
-  <h1>Dead Dog Down – Game Studio</h1>
-  <p>We make games and tools — and love helping creators express themselves through open-source software.</p>
 
-  <h2>Contact</h2>
-  <p>Email us at: <a href="mailto:deaddogdown.gamestudio@gmail.com">deaddogdown.gamestudio@gmail.com</a></p>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <!-- Optional: Add logo or title here -->
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <h1>Dead Dog Down – Game Studio</h1>
+    <p>We make games and tools — and love helping creators express themselves through open-source software.</p>
+
+    <h2>Contact</h2>
+    <p>Email us at: <a href="mailto:deaddogdown.gamestudio@gmail.com">deaddogdown.gamestudio@gmail.com</a></p>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="bottom-bar">
+    <!-- Optional: Add copyright or links here -->
+  </div>
+
 </body>
 </html>
